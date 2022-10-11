@@ -1,0 +1,60 @@
+<nav class="navbar border-bottom navbar-expand-lg navbar-light bg-light">
+  <div class="container">
+    
+ <nav class="navbar navbar-light bg-light">
+  <div class="container">
+    <a class="navbar-brand" href="#">
+
+      <img src="{{data.[0].brandIcoUrl}}" alt="Brand-logo" width="45" height="45" style=" border-radius:50%" class="d-inline-block ">
+           {{ data.[0].brandName}}
+    </a>
+  </div>
+</nav>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+       
+       
+       {{#each data.[0].links.[0]}}
+
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="{{ this.url}}">{{ this.label}}</a>
+        </li>
+
+        {{/each}}
+        {{#each data.[0].links.[1]}}
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="{{ this.url}}">{{ this.label}}</a>
+        </li>
+        {{/each}}
+        
+        {{#each data.[0].links.[2]}}
+
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="{{ this.url}}">{{ this.label}}</a>
+        </li>
+
+        {{/each}}
+
+
+        {{#each data.[0].links.[3]}}
+
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="{{ this.url}}">{{ this.label}}</a>
+        </li>
+         {{/each}} 
+          {{#each data.[0].links.[4]}}
+
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="{{ this.url}}">{{ this.label}}</a>
+        </li>
+         {{/each}} 
+        
+        
+      </ul>
+     
+    </div>
+  </div>
+</nav>
